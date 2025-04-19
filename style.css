@@ -1,0 +1,113 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #548687;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Game container */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game board */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+/* Each cell box */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem #000;
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #f8e27e;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+/* Reset button */
+#reset-btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #3f3f3e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#reset-btn:hover {
+    background-color: #575756;
+}
+
+/* New Game button */
+#new-btn {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #2c2c2b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#new-btn:hover {
+    background-color: #474747;
+}
+
+/* Winner message */
+#msg {
+    color: #f78119;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Message container */
+.msg-container {
+    height: 100vmin;
+    width: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
+/* Responsive design for smaller screens */
